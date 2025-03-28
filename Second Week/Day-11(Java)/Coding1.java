@@ -1,4 +1,5 @@
 import java.util.*;
+//leetcode question-121
 //Input- [7,1,5,3,6,4]
 //Stocks boought on day 2 (price = 1) and sell on day 5 (price =6) , profit =6-1=5
 //Output:- 5
