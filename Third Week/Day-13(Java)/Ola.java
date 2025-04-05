@@ -12,13 +12,13 @@ public class Ola {
 
         switch (type) {
             case 1:
-                cab = new Auto("Auto");
+                cab = new Auto("Auto");//Upcasting 
                 break;
             case 2:
-                cab = new Bike("Bike");
+                cab = new Bike("Bike");//Upcasting 
                 break;
             case 3:
-                cab = new Sedan("Sedan");
+                cab = new Sedan("Sedan");//Upcasting 
                 break;
         
             default:
@@ -27,17 +27,17 @@ public class Ola {
         }
         //obj.ref.variable instaneof Classname
         if(cab instanceof Auto){
-            Auto auto =(Auto) cab;
+            Auto auto =(Auto) cab; //downcasting
             System.out.println(auto.type);
             System.out.println(auto.price);
         }
         else if(cab instanceof Sedan){
-            Sedan sedan = (Sedan) cab;
+            Sedan sedan = (Sedan) cab; //downcasting
             System.out.println(sedan.type);
             System.out.println(sedan.price);
         }
         else if(cab instanceof Bike){
-            Bike bike = (Bike) cab;
+            Bike bike = (Bike) cab; //upcasting
             System.out.println(bike.type);
             System.out.println(bike.price);
         }
